@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GigCarGear — Best Gear for Rideshare & Delivery Drivers</title>
+  <meta name="description" content="Interactive buying guide for gig workers. Find the best dash cams, phone mounts, organizers, and car office gear for Uber, DoorDash, and field service drivers.">
+  <meta name="keywords" content="rideshare driver accessories, delivery driver car setup, gig worker car gear, best dash cam for Uber, DoorDash driver organization, mobile office car">
+  <link rel="canonical" href="https://sillymodes.github.io/gigcargear/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GigCarGear — Build Your Perfect Gig Car Setup">
+  <meta property="og:description" content="Take the 4-question quiz and get personalized product picks for rideshare, delivery, and mobile workers.">
+  <meta property="og:url" content="https://sillymodes.github.io/gigcargear/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://sillymodes.github.io/gigcargear/og-preview.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json" id="jsonld-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "GigCarGear",
+    "url": "https://sillymodes.github.io/gigcargear/",
+    "description": "Interactive product recommendation quiz for gig economy workers.",
+    "applicationCategory": "ShoppingApplication",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.5",
+      "reviewCount": "0"
+    }
+  }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    /* ============ RESET & BASE ============ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #F97316;
+      --primary-hover: #EA580C;
+      --primary-light: rgba(249, 115, 22, 0.1);
+      --primary-glow: rgba(249, 115, 22, 0.25);
+      --dark-bg: #1E293B;
+      --darker-bg: #0F172A;
+      --light-bg: #F8FAFC;
+      --text: #0F172A;
+      --text-muted: #64748B;
+      --text-light: #94A3B8;
+      --white: #FFFFFF;
+      --border: #E2E8F0;
+      --border-light: #F1F5F9;
+      --card-radius: 12px;
+      --btn-radius: 8px;
+      --max-width: 1100px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.04);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.1), 0 4px 12px rgba(0,0,0,0.05);
+      --shadow-xl: 0 20px 60px rgba(0,0,0,0.12), 0 8px 20px rgba(0,0,0,0.06);
+      --transition-fast: 0.15s ease;
+      --transition-med: 0.3s ease;
+      --transition-slow: 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--text);
+      background: var(--light-bg);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    main { flex: 1; }
+
+    a { color: var(--primary); text-decoration: none; transition: color var(--transition-fast); }
+    a:hover { color: var(--primary-hover); }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: all var(--transition-fast);
+    }
+    button:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+    img { max-width: 100%; height: auto; }
+
+    .container { width: 100%; max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+    /* ============ NAVIGATION ============ */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow var(--transition-fast);
+    }
+    nav.scrolled { box-shadow: var(--shadow-md); }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .nav-logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-logo span { color: var(--primary); }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .nav-links a, .nav-links button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      border-radius: var(--btn-radius);
+      background: none;
+      transition: all var(--transition-fast);
+    }
+    .nav-links a:hover, .nav-links button:hover { color: var(--text); background: var(--border-light); }
+    .nav-links a.active { color: var(--primary); background: var(--primary-light); }
+
+    .nav-links .coffee-link {
+      background: #FFDD00;
+      color: var(--text);
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: var(--btn-radius);
+    }
+    .nav-links .coffee-link:hover { background: #F5D000; transform: translateY(-1px); }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all var(--transition-med);
+    }
+    .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    @media (max-width: 767px) {
+      .hamburger { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        flex-direction: column;
+        padding: 16px 24px;
+        gap: 4px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow-lg);
+        transform: translateY(-120%);
+        opacity: 0;
+        transition: all var(--transition-slow);
+      }
+      .nav-links.open { transform: translateY(0); opacity: 1; }
+      .nav-links a, .nav-links button { width: 100%; justify-content: center; padding: 12px 16px; font-size: 1rem; }
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--white) 0%, var(--light-bg) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      width: 800px;
+      height: 800px;
+      transform: translateX(-50%);
+      background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      color: var(--text);
+      position: relative;
+    }
+    .hero h1 em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--primary) 0%, #FB923C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-sub {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 520px;
+      margin: 0 auto 32px;
+      position: relative;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 36px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      background: linear-gradient(135deg, var(--primary) 0%, #EA580C 100%);
+      border-radius: var(--btn-radius);
+      box-shadow: 0 4px 16px rgba(249,115,22,0.35);
+      transition: all var(--transition-med);
+      position: relative;
+    }
+    .hero-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(249,115,22,0.4);
+    }
+    .hero-cta:active { transform: translateY(0); }
+
+    .trust-signals {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 36px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .trust-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      box-shadow: var(--shadow-sm);
+    }
+    .trust-badge .star { color: #FBBF24; }
+
+    /* ============ QUIZ ============ */
+    .quiz-section {
+      padding: 40px 0 80px;
+    }
+
+    .quiz-container {
+      max-width: 720px;
+      margin: 0 auto;
+      position: relative;
+      min-height: 400px;
+    }
+
+    .quiz-progress {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 32px;
+      padding: 0 4px;
+    }
+    .quiz-progress-step {
+      flex: 1;
+      height: 4px;
+      background: var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: background var(--transition-med);
+    }
+    .quiz-progress-step.active { background: var(--primary); }
+    .quiz-progress-step.completed { background: var(--primary); }
+    .quiz-step-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .quiz-card {
+      background: var(--white);
+      border-radius: var(--card-radius);
+      padding: 40px 36px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border-light);
+      animation: cardIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    @keyframes cardIn {
+      from { opacity: 0; transform: translateY(24px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @keyframes cardOut {
+      from { opacity: 1; transform: translateY(0) scale(1); }
+      to { opacity: 0; transform: translateY(-24px) scale(0.97); }
+    }
+
+    .quiz-card h2 {
+      font-size: 1.55rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.02em;
+    }
+    .quiz-card .step-hint {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    .quiz-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .quiz-option {
+      padding: 18px 20px;
+      background: var(--light-bg);
+      border: 2px solid var(--border);
+      border-radius: var(--card-radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      text-align: left;
+      transition: all var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .quiz-option .opt-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+    }
+    .quiz-option:hover {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      transform: translateY(-1px);
+    }
+    .quiz-option:active { transform: translateY(0); }
+
+    @media (max-width: 500px) {
+      .quiz-options { grid-template-columns: 1fr; }
+      .quiz-card { padding: 28px 20px; }
+    }
+
+    /* ============ RESULTS ============ */
+    .results-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .results-header h2 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .results-header p { color: var(--text-muted); font-size: 0.95rem; }
+
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px 60px;
+    }
+
+    .product-tile {
+      background: var(--white);
+      border-radius: var(--card-radius);
+      border: 1px solid var(--border);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-med);
+      animation: tileIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+    }
+    .product-tile:hover {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+
+    @keyframes tileIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .product-tile-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .product-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--text);
+    }
+
+    .price-badge {
+      flex-shrink: 0;
+      padding: 4px 10px;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    .product-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      line-height: 1.5;
+    }
+
+    .product-stars {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 14px;
+      font-size: 0.85rem;
+    }
+    .product-stars .filled { color: #FBBF24; }
+    .product-stars .empty { color: var(--border); }
+    .product-stars .rating-text { color: var(--text-muted); margin-left: 4px; font-weight: 500; }
+
+    .pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 18px;
+      font-size: 0.82rem;
+    }
+    .pros-cons div { display: flex; align-items: flex-start; gap: 4px; line-height: 1.4; }
+    .pro-icon { color: #22C55E; flex-shrink: 0; font-weight: 700; }
+    .con-icon { color: #EF4444; flex-shrink: 0; font-weight: 700; }
+
+    .amazon-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 20px;
+      background: var(--dark-bg);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.88rem;
+      border-radius: var(--btn-radius);
+      margin-top: auto;
+      transition: all var(--transition-fast);
+    }
+    .amazon-btn:hover { background: var(--darker-bg); color: var(--white); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+
+    .retake-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 28px;
+      background: var(--white);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 2px solid var(--border);
+      border-radius: var(--btn-radius);
+      transition: all var(--transition-fast);
+    }
+    .retake-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+    /* ============ REVIEW PAGE ============ */
+    .review-section {
+      padding: 60px 0 80px;
+    }
+
+    .review-section h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .review-aggregate {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .review-aggregate .big-rating {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1;
+    }
+    .review-aggregate .rating-stars-lg {
+      font-size: 1.3rem;
+      color: #FBBF24;
+      margin: 8px 0 4px;
+    }
+    .review-aggregate .rating-count {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .review-form-card {
+      background: var(--white);
+      border-radius: var(--card-radius);
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border-light);
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+
+    .review-form-card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--btn-radius);
+      font-size: 0.92rem;
+      font-family: inherit;
+      transition: border-color var(--transition-fast);
+      background: var(--light-bg);
+    }
+    .form-group input:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-glow);
+    }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+
+    .star-input {
+      display: flex;
+      gap: 4px;
+    }
+    .star-input button {
+      font-size: 1.6rem;
+      background: none;
+      color: var(--border);
+      padding: 2px;
+      transition: color var(--transition-fast), transform var(--transition-fast);
+    }
+    .star-input button.active { color: #FBBF24; }
+    .star-input button:hover { color: #FBBF24; transform: scale(1.15); }
+
+    .submit-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 28px;
+      background: linear-gradient(135deg, var(--primary) 0%, #EA580C 100%);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: var(--btn-radius);
+      transition: all var(--transition-fast);
+    }
+    .submit-btn:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(249,115,22,0.35); }
+    .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; box-shadow: none; }
+
+    .thank-you-msg {
+      text-align: center;
+      padding: 20px;
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-radius: var(--card-radius);
+      color: #166534;
+      font-weight: 600;
+      animation: cardIn 0.4s ease forwards;
+    }
+
+    .reviews-list {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .reviews-list h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .review-card {
+      background: var(--white);
+      border-radius: var(--card-radius);
+      border: 1px solid var(--border-light);
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow var(--transition-fast);
+    }
+    .review-card:hover { box-shadow: var(--shadow-md); }
+
+    .review-card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .review-card-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .review-card-date {
+      font-size: 0.8rem;
+      color: var(--text-light);
+    }
+    .review-card-stars {
+      color: #FBBF24;
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    .review-card-comment {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .pagination button {
+      padding: 8px 18px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--btn-radius);
+      background: var(--white);
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .pagination button:hover { border-color: var(--primary); color: var(--primary); }
+    .pagination button:disabled { opacity: 0.4; cursor: not-allowed; }
+    .pagination .page-info { font-size: 0.85rem; color: var(--text-muted); }
+
+    /* ============ ABOUT PAGE ============ */
+    .about-section {
+      padding: 60px 0 80px;
+    }
+    .about-section h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .about-content {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .about-card {
+      background: var(--white);
+      border-radius: var(--card-radius);
+      padding: 32px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-md);
+      margin-bottom: 24px;
+    }
+    .about-card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .about-card p {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 12px;
+    }
+    .about-card p:last-child { margin-bottom: 0; }
+
+    .disclosure-card {
+      background: #FFFBEB;
+      border-color: #FDE68A;
+    }
+    .disclosure-card h2 { color: #92400E; }
+
+    .coffee-cta {
+      text-align: center;
+      padding: 32px;
+    }
+    .coffee-cta p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+    .coffee-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      background: #FFDD00;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: var(--btn-radius);
+      transition: all var(--transition-fast);
+      box-shadow: var(--shadow-md);
+    }
+    .coffee-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); color: var(--text); }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+    }
+
+    /* ============ FOOTER ============ */
+    footer {
+      background: var(--dark-bg);
+      color: #CBD5E1;
+      padding: 32px 0;
+    }
+
+    .footer-stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      font-size: 0.88rem;
+    }
+    .footer-stat {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .footer-stat .stat-icon { font-size: 1rem; }
+
+    .footer-copy {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+    .footer-affiliate {
+      font-size: 0.72rem;
+      color: #64748B;
+      margin-top: 6px;
+    }
+
+    /* ============ UTILITY ============ */
+    .hidden { display: none !important; }
+
+    .page-enter { animation: cardIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); border: 0;
+    }
+
+    /* Loading spinner */
+    .spinner {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--border);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.6s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .no-reviews-msg {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 767px) {
+      .hero { padding: 56px 0 40px; }
+      .hero h1 { font-size: 1.8rem; }
+      .trust-signals { gap: 12px; }
+      .results-grid { grid-template-columns: 1fr; padding: 0 16px 60px; }
+      .pros-cons { grid-template-columns: 1fr; }
+      .review-form-card { padding: 24px 20px; margin: 0 0 40px; }
+      .about-card { padding: 24px 20px; }
+      .footer-stats { gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo" aria-label="GigCarGear Home">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="16" fill="#1E293B"/>
+          <circle cx="16" cy="16" r="10" stroke="#F97316" stroke-width="2.5" fill="none"/>
+          <circle cx="16" cy="16" r="3" fill="#F97316"/>
+          <line x1="16" y1="6" x2="16" y2="10" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+          <line x1="16" y1="22" x2="16" y2="26" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+          <line x1="6" y1="16" x2="10" y2="16" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+          <line x1="22" y1="16" x2="26" y2="16" stroke="#F97316" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        Gig<span>Car</span>Gear
+      </a>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#review" data-nav="review">Review</a></li>
+        <li><a href="#about" data-nav="about">About</a></li>
+        <li><a href="https://buymeacoffee.com/timtian" target="_blank" rel="noopener noreferrer" class="coffee-link">&#9749; Buy Me a Coffee</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ======== MAIN CONTENT ======== -->
+  <main>
+
+    <!-- HOME PAGE -->
+    <div id="page-home">
+      <section class="hero">
+        <div class="container">
+          <h1>Build Your Perfect <em>Gig Car Setup</em></h1>
+          <p class="hero-sub">Answer 4 questions. Get a personalized gear list.</p>
+          <button class="hero-cta" id="start-quiz-btn">Start the Quiz <span aria-hidden="true">&rarr;</span></button>
+          <div class="trust-signals">
+            <span class="trust-badge"><span aria-hidden="true">&#128065;</span> Used by <strong id="trust-visitors">1,000+</strong> gig workers</span>
+            <span class="trust-badge"><span class="star" aria-hidden="true">&#9733;</span> <strong id="trust-rating">4.5</strong> average rating</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="quiz-section hidden" id="quiz-section" aria-label="Product recommendation quiz">
+        <div class="container">
+          <div class="quiz-container" id="quiz-container">
+            <!-- Quiz cards rendered by JS -->
+          </div>
+        </div>
+      </section>
+
+      <section class="hidden" id="results-section" aria-label="Your recommended gear">
+        <div class="container">
+          <div class="results-header">
+            <h2>Your Personalized Gear Setup</h2>
+            <p id="results-summary">Based on your answers, here are our top picks.</p>
+          </div>
+        </div>
+        <div class="results-grid" id="results-grid">
+          <!-- Product tiles rendered by JS -->
+        </div>
+        <div style="text-align:center;padding-bottom:40px;">
+          <button class="retake-btn" id="retake-btn">&#8634; Retake the Quiz</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- REVIEW PAGE -->
+    <div id="page-review" class="hidden">
+      <section class="review-section">
+        <div class="container">
+          <h1>Community Reviews</h1>
+
+          <div class="review-aggregate" id="review-aggregate">
+            <div class="big-rating" id="agg-rating">--</div>
+            <div class="rating-stars-lg" id="agg-stars"></div>
+            <div class="rating-count" id="agg-count">Loading reviews...</div>
+          </div>
+
+          <div class="review-form-card" id="review-form-card">
+            <h2>Leave a Review</h2>
+            <form id="review-form" novalidate>
+              <div class="form-group">
+                <label for="review-name">Name (optional)</label>
+                <input type="text" id="review-name" placeholder="Anonymous" maxlength="50">
+              </div>
+              <div class="form-group">
+                <label>Rating</label>
+                <div class="star-input" id="star-input" role="radiogroup" aria-label="Rating">
+                  <button type="button" data-star="1" aria-label="1 star">&#9733;</button>
+                  <button type="button" data-star="2" aria-label="2 stars">&#9733;</button>
+                  <button type="button" data-star="3" aria-label="3 stars">&#9733;</button>
+                  <button type="button" data-star="4" aria-label="4 stars">&#9733;</button>
+                  <button type="button" data-star="5" aria-label="5 stars">&#9733;</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="review-comment">Comment</label>
+                <textarea id="review-comment" placeholder="Share your experience with GigCarGear..." maxlength="500" rows="4"></textarea>
+                <div style="text-align:right;font-size:0.78rem;color:var(--text-light);margin-top:4px;"><span id="char-count">0</span>/500</div>
+              </div>
+              <button type="submit" class="submit-btn" id="submit-review-btn">Submit Review</button>
+            </form>
+          </div>
+
+          <div class="reviews-list" id="reviews-list">
+            <h2>Recent Reviews</h2>
+            <div id="reviews-container">
+              <!-- Reviews rendered by JS -->
+            </div>
+            <div class="pagination" id="pagination"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="page-about" class="hidden">
+      <section class="about-section">
+        <div class="container">
+          <h1>About GigCarGear</h1>
+          <div class="about-content">
+            <article class="about-card">
+              <h2>Our Mission</h2>
+              <p>GigCarGear was built for the millions of rideshare drivers, delivery couriers, mobile salespeople, and field service pros who spend their workdays behind the wheel. We know that the right gear can transform your car from "just a vehicle" into a productive, comfortable mobile workspace.</p>
+              <p>Our interactive quiz cuts through the noise of thousands of Amazon listings to surface the specific products that match your gig, vehicle, biggest pain point, and budget. No generic listicles -- just curated recommendations from real gig workers.</p>
+            </article>
+
+            <article class="about-card disclosure-card">
+              <h2>Affiliate Disclosure</h2>
+              <p>We earn a small commission from Amazon affiliate links at no extra cost to you. This helps us keep GigCarGear free and ad-free. We only recommend products we have researched and believe deliver genuine value to gig workers.</p>
+            </article>
+
+            <article class="about-card coffee-cta">
+              <p>If GigCarGear helped you find the right gear, consider supporting the project:</p>
+              <a href="https://buymeacoffee.com/timtian" target="_blank" rel="noopener noreferrer" class="coffee-btn">&#9749; Buy Me a Coffee</a>
+            </article>
+
+            <article class="about-card">
+              <h2>Contact</h2>
+              <p>Have a suggestion or found a product we should add? Reach out:</p>
+              <a href="mailto:sillymodes@users.noreply.github.com" class="contact-link">&#9993; sillymodes@users.noreply.github.com</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    <div class="container">
+      <div class="footer-stats">
+        <span class="footer-stat"><span class="stat-icon" aria-hidden="true">&#128065;</span> Today: <strong id="stat-today">--</strong></span>
+        <span class="footer-stat"><span class="stat-icon" aria-hidden="true">&#127758;</span> All-time: <strong id="stat-alltime">--</strong></span>
+        <span class="footer-stat"><span class="stat-icon" aria-hidden="true">&#11088;</span> <strong id="stat-avg">--</strong> avg from <strong id="stat-reviews">--</strong> reviews</span>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 GigCarGear &middot; Not affiliated with Amazon, Uber, or DoorDash
+        <div class="footer-affiliate">As an Amazon Associate, we earn from qualifying purchases.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== APPLICATION SCRIPT ======== -->
+  <script>
+  (function() {
+    'use strict';
+
+    /* ========== CONFIG ========== */
+    const API = 'https://gigcargear-api.sillymodes.workers.dev';
+    const AFFILIATE_TAG = 'gigcargear-20';
+    const BMC_LINK = 'https://buymeacoffee.com/timtian';
+
+    /* ========== PRODUCT DATA ========== */
+    // Real Amazon products with real ASINs. Each product:
+    // { name, desc, price, rating, pros: [a,b], cons: [a,b], asin }
+    const PRODUCTS = {
+      // ===== RIDESHARE =====
+      'rideshare-backpain': [
+        { name: 'Everlasting Comfort Lumbar Support Pillow', desc: 'Memory foam back support that straps to any car seat. Reduces lower back strain on long shifts.', price: '$25-35', rating: 4.4, pros: ['Relieves lower back pain quickly', 'Washable mesh cover'], cons: ['Takes a few days to break in', 'May feel warm in summer'], asin: 'B01IJNJEZ0' },
+        { name: 'ComfiLife Gel Enhanced Seat Cushion', desc: 'Gel and memory foam seat cushion for sciatica and tailbone relief during extended driving.', price: '$30-40', rating: 4.5, pros: ['Excellent pressure relief', 'Non-slip rubber bottom'], cons: ['Slightly thick for low seats', 'Cover could be softer'], asin: 'B014F8AMGC' },
+        { name: 'Dreamer Car Headrest Pillow', desc: 'Ergonomic neck pillow with adjustable strap for comfortable driving posture.', price: '$20-30', rating: 4.3, pros: ['Great neck support', 'Adjustable height strap'], cons: ['One-size fit may not suit all', 'Firm when new'], asin: 'B0836ZWGFH' },
+        { name: 'Everlasting Comfort Seat Cushion & Lumbar Combo', desc: 'Complete ergonomic set with memory foam seat pad and back support pillow.', price: '$50-65', rating: 4.4, pros: ['Full back & seat relief', 'Great bundle value'], cons: ['Two pieces to manage', 'Needs occasional fluffing'], asin: 'B07PNH2YCK' },
+        { name: 'SAMSONITE Lumbar Support Pillow', desc: 'Premium memory foam lumbar pillow with adjustable strap and breathable mesh.', price: '$20-30', rating: 4.3, pros: ['Trusted brand quality', 'Slim profile fits any seat'], cons: ['Slightly small for larger drivers', 'Strap could be longer'], asin: 'B00LYQ91CS' }
+      ],
+
+      'rideshare-phonedying': [
+        { name: 'Anker 40W Dual USB-C Car Charger', desc: 'Fast-charges two devices simultaneously with Power Delivery. Essential for navigation + passenger charging.', price: '$16-22', rating: 4.7, pros: ['Charges phones at max speed', 'Ultra compact design'], cons: ['No USB-A port', 'Cable not included'], asin: 'B0CKXM1YY6' },
+        { name: 'iOttie Easy One Touch 5 Dashboard Mount', desc: 'One-handed mounting with auto-grip. Keeps phone visible for navigation.', price: '$22-28', rating: 4.4, pros: ['Easy one-touch mount/release', 'Strong suction cup hold'], cons: ['Suction may weaken in heat', 'Dashboard pad needed for textured surfaces'], asin: 'B0CQH53L3F' },
+        { name: 'Anker 20000mAh Power Bank', desc: 'Portable battery pack with 20W USB-C PD. Backup power for all-day shifts.', price: '$35-45', rating: 4.7, pros: ['Charges phone 4-5 times', 'USB-C fast charging'], cons: ['Heavy at 12 oz', 'Takes 6+ hours to recharge'], asin: 'B09VPHFD2Q' },
+        { name: 'Syncwire Magnetic Car Phone Mount', desc: 'Strong N52 magnets hold phone securely on air vent. Minimal and clean look.', price: '$12-18', rating: 4.5, pros: ['Super easy to use', 'Sleek minimal design'], cons: ['Needs metal plate on phone', 'Heavy phones may shift on bumps'], asin: 'B082DHPYXF' },
+        { name: 'USB C Car Charger Retractable Cable', desc: '4-in-1 car charger with retractable cables for USB-C, Lightning, and USB-A.', price: '$12-18', rating: 4.3, pros: ['Cables built in - nothing to forget', 'Works with all phone types'], cons: ['Cables are short', 'Slower than dedicated PD chargers'], asin: 'B0D1DMFMZ7' }
+      ],
+
+      'rideshare-safety': [
+        { name: 'Vantrue N1 Pro Mini Dash Cam', desc: 'Compact 1080p dash cam with night vision and parking mode. Fits discreetly on windshield.', price: '$80-100', rating: 4.4, pros: ['Excellent night recording', 'Very small and discreet'], cons: ['Front camera only', 'No built-in GPS (optional add-on)'], asin: 'B0CP31GBHH' },
+        { name: 'First Aid Only 299-Piece Emergency Kit', desc: 'Comprehensive first aid kit in durable case. Covers cuts, burns, and common injuries.', price: '$15-20', rating: 4.8, pros: ['Extremely comprehensive', 'Hard-shell durable case'], cons: ['Large for glove box', 'Some items may expire'], asin: 'B000069EYA' },
+        { name: 'LIANXIN Emergency Roadside Kit', desc: 'Car safety kit with jumper cables, tow rope, flashlight, and tire pressure gauge.', price: '$30-40', rating: 4.5, pros: ['Everything you need in one bag', 'Reflective warning triangle included'], cons: ['Jumper cables are short', 'Bag could be sturdier'], asin: 'B0C23NPR6N' },
+        { name: 'VIOFO A129 Duo Dual Dash Cam', desc: 'Front and rear 1080p dash cams with GPS and Wi-Fi for complete coverage.', price: '$130-160', rating: 4.4, pros: ['Dual camera front + rear', 'Built-in GPS and Wi-Fi'], cons: ['Installation takes time', 'App can be finicky'], asin: 'B07CT63048' },
+        { name: 'Nite Ize Steelie Phone Mount', desc: 'Low-profile magnetic phone mount with strong ball-and-socket hold for hands-free calls.', price: '$25-35', rating: 4.3, pros: ['Extremely low profile', 'Very strong magnetic hold'], cons: ['Magnet stays on phone', 'Not compatible with all cases'], asin: 'B00JRGOKQ8' }
+      ],
+
+      'rideshare-disorganized': [
+        { name: 'Drive Auto Car Trunk Organizer', desc: 'Collapsible trunk storage with reinforced walls and multiple compartments.', price: '$20-28', rating: 4.5, pros: ['Collapsible for flat storage', 'Strong reinforced walls'], cons: ['Not waterproof', 'Takes up trunk space when open'], asin: 'B01LXAA2OQ' },
+        { name: 'Lusso Gear Car Seat Organizer', desc: 'Front-seat back organizer with 9 pockets for phone, tablet, water bottle, and snacks.', price: '$15-22', rating: 4.4, pros: ['Lots of pockets', 'Keeps essentials within reach'], cons: ['Tablet holder is tight', 'May sag with heavy items'], asin: 'B07V95NK2L' },
+        { name: 'Drop Stop Car Seat Gap Filler (2 Pack)', desc: 'Fills the gap between seat and console to prevent dropped items.', price: '$20-25', rating: 4.4, pros: ['Stops items from falling', 'Universal fit for all cars'], cons: ['Can shift during entry/exit', 'Not great for wide gaps'], asin: 'B00BYH7GEM' },
+        { name: 'HOTOR Car Trash Can', desc: 'Leak-proof car garbage bag with lid. Clips to headrest or center console.', price: '$10-14', rating: 4.5, pros: ['Keeps car clean effortlessly', 'Leak-proof liner'], cons: ['Smallish capacity', 'Lid can pop open on bumps'], asin: 'B07X5TGMVF' },
+        { name: 'SURDOCA Car Center Console Organizer Tray', desc: 'Custom-fit tray for center console. Divides space for coins, cards, keys, and phone.', price: '$12-18', rating: 4.3, pros: ['Neat console organization', 'Non-slip rubber mat'], cons: ['Vehicle-specific sizing', 'Can slide on hard turns'], asin: 'B0BHWRG3CJ' }
+      ],
+
+      'rideshare-workbetween': [
+        { name: 'JOYTUTUS Steering Wheel Desk Tray', desc: 'Portable desk that hooks onto steering wheel for eating or working between rides.', price: '$15-22', rating: 4.3, pros: ['Portable and lightweight', 'Stable flat surface'], cons: ['Only for parked use', 'Not for large laptops'], asin: 'B08HLPY256' },
+        { name: 'Macally Cup Holder Tablet Mount', desc: 'Adjustable tablet holder that fits in cup holder. Great for a second screen between gigs.', price: '$20-28', rating: 4.2, pros: ['No dashboard adhesive needed', 'Adjustable viewing angle'], cons: ['Uses a cup holder slot', 'Heavier tablets may wobble'], asin: 'B07LCBF85X' },
+        { name: 'Anker USB-C Hub', desc: '7-in-1 USB-C hub with HDMI, USB-A, SD card for laptop connectivity on the go.', price: '$30-38', rating: 4.6, pros: ['All ports you need', 'Slim and portable'], cons: ['Gets warm with heavy use', 'No ethernet port'], asin: 'B07ZVKTP53' },
+        { name: 'NETGEAR Nighthawk M1 Mobile Hotspot', desc: 'Portable 4G LTE hotspot for reliable internet anywhere. Connect up to 20 devices.', price: '$100-150', rating: 4.1, pros: ['Fast and reliable 4G', 'All-day battery life'], cons: ['Requires separate data plan', 'Expensive upfront'], asin: 'B07G5KWZ3R' },
+        { name: 'Anker 623 MagGo Wireless Charger', desc: 'Magnetic wireless charging stand that works as phone prop for video calls between gigs.', price: '$28-35', rating: 4.5, pros: ['Charges and props phone up', 'Folds flat for storage'], cons: ['MagSafe-compatible phones only', 'Slower than wired charging'], asin: 'B09DFJ2SFH' }
+      ],
+
+      // ===== FOOD DELIVERY =====
+      'fooddelivery-disorganized': [
+        { name: 'Insulated Food Delivery Bag (XXL)', desc: 'Commercial-grade insulated bag fits multiple large orders. Keeps food hot for 45+ minutes.', price: '$22-30', rating: 4.5, pros: ['Fits multiple orders at once', 'Great heat retention'], cons: ['Bulky when not in use', 'Zipper quality varies'], asin: 'B09TTBMZ3P' },
+        { name: 'Drive Auto Car Trunk Organizer', desc: 'Collapsible trunk organizer with adjustable compartments for delivery bag separation.', price: '$20-28', rating: 4.5, pros: ['Collapsible when not needed', 'Multiple compartments'], cons: ['Not insulated', 'Takes up trunk space'], asin: 'B01LXAA2OQ' },
+        { name: 'Lusso Gear Backseat Organizer', desc: 'Multi-pocket organizer with tablet holder for managing delivery apps and essentials.', price: '$15-22', rating: 4.4, pros: ['Great for keeping supplies handy', 'Built-in tablet holder'], cons: ['Takes time to install', 'Pockets can stretch'], asin: 'B07V95NK2L' },
+        { name: 'HOTOR Car Trash Can', desc: 'Leak-proof mini trash bag with lid. Essential for keeping delivery car clean.', price: '$10-14', rating: 4.5, pros: ['Keeps car spotless', 'Leak-proof design'], cons: ['Small capacity', 'Needs frequent emptying'], asin: 'B07X5TGMVF' },
+        { name: 'Cup Holder Expander for Car', desc: 'Adjustable cup holder insert fits oversized drink orders securely in transit.', price: '$10-15', rating: 4.3, pros: ['Fits big drink cups', 'Easy to install/remove'], cons: ['One drink at a time', 'May not fit all cup holders'], asin: 'B0BZ58F79D' },
+        { name: 'Rubbermaid Cargo Trunk Non-Slip Mat', desc: 'Non-slip cargo mat prevents delivery bags from sliding during turns and stops.', price: '$12-18', rating: 4.4, pros: ['Stops bags from sliding', 'Easy to clean'], cons: ['Needs cutting to fit', 'Rubber smell initially'], asin: 'B000BFVV4Y' }
+      ],
+
+      'fooddelivery-phonedying': [
+        { name: 'Anker 40W Dual USB-C Car Charger', desc: 'Fast PD charging for two phones at once. Keep delivery and personal phones powered.', price: '$16-22', rating: 4.7, pros: ['Fast dual-device charging', 'Compact and reliable'], cons: ['No USB-A fallback', 'Cable not included'], asin: 'B0CKXM1YY6' },
+        { name: 'Miracase Magnetic Phone Mount', desc: 'Strong magnetic air vent mount for quick phone swaps between delivery apps.', price: '$12-16', rating: 4.5, pros: ['Easy one-hand operation', 'Works with most cases'], cons: ['Metal plate required', 'Can block AC airflow'], asin: 'B0CL5FMXR1' },
+        { name: 'Anker 313 Power Bank 10000mAh', desc: 'Compact portable charger that fits in a pocket. Emergency backup for long delivery shifts.', price: '$18-25', rating: 4.6, pros: ['Lightweight and pocket-sized', 'Reliable Anker quality'], cons: ['Only 2 full charges', 'No fast charging'], asin: 'B0B7M4LHMD' },
+        { name: 'Spigen OneTap Pro MagSafe Car Mount', desc: 'Premium magnetic mount with strong MagSafe-compatible magnets for effortless docking.', price: '$30-40', rating: 4.5, pros: ['MagSafe-level magnetic strength', 'Premium build quality'], cons: ['MagSafe phones only', 'Pricier than basic mounts'], asin: 'B09S6DT7MN' },
+        { name: 'Baseus 30W USB-C Car Charger', desc: 'Budget-friendly fast car charger with USB-C and USB-A ports.', price: '$10-15', rating: 4.4, pros: ['Cheap and effective', 'Dual port versatility'], cons: ['Not as fast as 40W', 'LED light can be bright at night'], asin: 'B0DCFTKJYD' }
+      ],
+
+      'fooddelivery-backpain': [
+        { name: 'Everlasting Comfort Lumbar Support Pillow', desc: 'Pure memory foam back support designed for long hours of delivery driving.', price: '$25-35', rating: 4.4, pros: ['Instant back relief', 'Breathable mesh cover'], cons: ['Break-in period needed', 'Can slide on leather seats'], asin: 'B01IJNJEZ0' },
+        { name: 'ComfiLife Gel Enhanced Seat Cushion', desc: 'Gel-infused memory foam for tailbone pressure relief during repetitive in-and-out car entry.', price: '$30-40', rating: 4.5, pros: ['Reduces tailbone pressure', 'Non-slip rubber base'], cons: ['Adds height to seat', 'Warm in summer'], asin: 'B014F8AMGC' },
+        { name: 'SNAILAX Vibration Massage Seat Cushion', desc: 'Heated vibrating seat pad with multiple massage nodes. Relax between deliveries.', price: '$35-50', rating: 4.3, pros: ['Built-in heat and massage', 'Multiple vibration modes'], cons: ['Needs car power outlet', 'Wires to manage'], asin: 'B076P5CDXG' },
+        { name: 'SAMSONITE Lumbar Support Pillow', desc: 'Slim-profile ergonomic lumbar pillow from a trusted brand.', price: '$20-30', rating: 4.3, pros: ['Low profile, fits any seat', 'Durable construction'], cons: ['Minimal cushioning', 'Strap is basic'], asin: 'B00LYQ91CS' },
+        { name: 'Purple Back Cushion', desc: 'Hyper-elastic polymer grid provides pressure relief without bottoming out.', price: '$40-55', rating: 4.2, pros: ['Unique grid tech never flattens', 'Stays cool'], cons: ['Higher price point', 'Unusual feel at first'], asin: 'B01LZS2NWK' }
+      ],
+
+      'fooddelivery-safety': [
+        { name: 'Vantrue N1 Pro Mini Dash Cam', desc: 'Discreet front dash cam captures incidents for insurance protection while delivering.', price: '$80-100', rating: 4.4, pros: ['Clear 1080p video', 'Automatic parking mode'], cons: ['No rear camera', 'SD card sold separately'], asin: 'B0CP31GBHH' },
+        { name: 'SABRE 3-in-1 Pepper Spray', desc: 'Compact self-defense pepper spray with key ring. Ideal for late-night deliveries.', price: '$8-12', rating: 4.6, pros: ['Strong formula', 'Key ring attachment'], cons: ['Check local laws', 'Expires after 4 years'], asin: 'B000UVTDLG' },
+        { name: 'First Aid Only 299-Piece Emergency Kit', desc: 'Comprehensive first aid kit for handling minor injuries on the road.', price: '$15-20', rating: 4.8, pros: ['Very comprehensive', 'Hard-shell case'], cons: ['Bulky for glovebox', 'Some items expire'], asin: 'B000069EYA' },
+        { name: 'Reflective Safety Vest', desc: 'High-visibility vest for nighttime curbside pickups and parking lot visibility.', price: '$8-12', rating: 4.5, pros: ['Bright and visible', 'Lightweight and breathable'], cons: ['Not stylish', 'Can snag on seatbelt'], asin: 'B0773T2SBV' },
+        { name: 'GearLight LED Flashlight (2-Pack)', desc: 'Compact bright flashlights for reading addresses and dark walkways at night.', price: '$14-18', rating: 4.7, pros: ['Very bright 500 lumens', 'Two-pack great value'], cons: ['Batteries not included', 'Small size easy to lose'], asin: 'B07WKVSYRF' }
+      ],
+
+      // ===== MOBILE SALES =====
+      'mobilesales-workbetween': [
+        { name: 'JOYTUTUS Steering Wheel Desk Tray', desc: 'Turn your steering wheel into a desk for calls, snacks, and paperwork between client visits.', price: '$15-22', rating: 4.3, pros: ['Instant portable desk', 'Fits all steering wheels'], cons: ['Parked use only', 'Not for full-size laptops'], asin: 'B08HLPY256' },
+        { name: 'ARKON Tablet and Laptop Car Mount', desc: 'Adjustable drill-free mount for laptops and tablets in the passenger seat area.', price: '$35-50', rating: 4.1, pros: ['Holds laptop securely', 'Adjustable arm and angle'], cons: ['Requires passenger seat', 'Complex setup'], asin: 'B00BCSYZVY' },
+        { name: 'NETGEAR Nighthawk M1 Mobile Hotspot', desc: 'Reliable portable hotspot for video calls, CRM access, and email between sales calls.', price: '$100-150', rating: 4.1, pros: ['Fast LTE speeds', 'Long battery life'], cons: ['Data plan required', 'Expensive upfront'], asin: 'B07G5KWZ3R' },
+        { name: 'Anker 7-in-1 USB-C Hub', desc: 'Connect your laptop to monitors, drives, and peripherals from the car.', price: '$30-38', rating: 4.6, pros: ['All essential ports', 'Compact and portable'], cons: ['Gets warm', 'Short built-in cable'], asin: 'B07ZVKTP53' },
+        { name: 'Jabra Talk 45 Bluetooth Headset', desc: 'Noise-canceling mono Bluetooth headset for professional sales calls on the road.', price: '$50-70', rating: 4.3, pros: ['Crystal clear calls', '6-hour battery life'], cons: ['Mono audio only', 'Ear loop fit varies'], asin: 'B07P7RYGHM' },
+        { name: 'RAVPower 30W Car Charger', desc: 'Dual-port car charger to keep laptop and phone topped up during a busy sales day.', price: '$14-20', rating: 4.5, pros: ['Fast USB-C PD charging', 'Affordable price'], cons: ['No retractable cable', 'Basic design'], asin: 'B09YDYLJKN' }
+      ],
+
+      'mobilesales-disorganized': [
+        { name: 'Modoker Backseat Car Organizer', desc: 'Multi-pocket back seat organizer with folder slots for brochures and sales materials.', price: '$16-24', rating: 4.3, pros: ['Great for papers and folders', 'Tablet holder included'], cons: ['Takes time to install', 'Can sag when heavy'], asin: 'B07PHR6QLQ' },
+        { name: 'Simple Houseware Heavy Duty Car Trunk Organizer', desc: 'Rigid trunk organizer with multiple compartments for samples and demo equipment.', price: '$18-26', rating: 4.4, pros: ['Sturdy and spacious', 'Folds flat when empty'], cons: ['Large footprint', 'Not insulated'], asin: 'B01LXAA2OQ' },
+        { name: 'Anker 7-in-1 USB-C Hub', desc: 'Keep all your cables, adapters, and connections tidy with this all-in-one hub.', price: '$30-38', rating: 4.6, pros: ['Reduces cable clutter', 'All essential ports'], cons: ['Gets warm with heavy use', 'Short cable'], asin: 'B07ZVKTP53' },
+        { name: 'Car Visor Organizer', desc: 'Sun visor pouch for business cards, pens, parking passes, and receipts.', price: '$8-14', rating: 4.2, pros: ['Easy quick access', 'Holds lots of small items'], cons: ['Can block visor function', 'Not for heavy items'], asin: 'B09MLPHV9R' },
+        { name: 'HOTOR Car Trash Can', desc: 'Keep your mobile office spotless with this leak-proof car trash container.', price: '$10-14', rating: 4.5, pros: ['Clean professional appearance', 'Leak-proof design'], cons: ['Small size', 'Frequent emptying needed'], asin: 'B07X5TGMVF' }
+      ],
+
+      // ===== FIELD SERVICE =====
+      'fieldservice-safety': [
+        { name: 'Neiko Safety Vest High Visibility', desc: 'ANSI/ISEA Class 2 reflective vest for roadside and worksite visibility.', price: '$10-16', rating: 4.6, pros: ['Meets ANSI safety standards', 'Multiple pockets for tools'], cons: ['Runs large', 'Can be warm in summer'], asin: 'B003AV1YEG' },
+        { name: 'Twinkle Star LED Road Flares (4 Pack)', desc: 'Magnetic LED road flares with multiple flash patterns for roadside safety.', price: '$18-24', rating: 4.6, pros: ['Visible from 1+ mile away', 'Magnetic base sticks to vehicles'], cons: ['Batteries drain on high mode', 'Bright enough to be distracting'], asin: 'B07FDMHV1S' },
+        { name: 'First Aid Only 299-Piece Emergency Kit', desc: 'Heavy-duty first aid kit for field injuries, cuts, and burns.', price: '$15-20', rating: 4.8, pros: ['Covers all common injuries', 'Durable hard case'], cons: ['Heavy to carry far', 'Items expire - check dates'], asin: 'B000069EYA' },
+        { name: 'Vantrue N1 Pro Mini Dash Cam', desc: 'Document job sites and driving with this compact dash cam with parking mode.', price: '$80-100', rating: 4.4, pros: ['Reliable incident documentation', 'Compact size'], cons: ['Front only', 'Needs separate SD card'], asin: 'B0CP31GBHH' },
+        { name: 'GearLight LED Flashlight (2-Pack)', desc: 'High-lumen flashlights for dark job sites and under-vehicle inspections.', price: '$14-18', rating: 4.7, pros: ['500 lumens each', 'Water resistant'], cons: ['Batteries not included', 'Small size'], asin: 'B07WKVSYRF' },
+        { name: 'LIANXIN Emergency Roadside Kit', desc: 'Complete roadside emergency kit with jumper cables, tow rope, and tools.', price: '$30-40', rating: 4.5, pros: ['All-in-one emergency kit', 'Good for remote job sites'], cons: ['Short jumper cables', 'Bag quality is basic'], asin: 'B0C23NPR6N' }
+      ],
+
+      'fieldservice-phonedying': [
+        { name: 'BESTEK 300W Power Inverter', desc: '300W car power inverter with 2 AC outlets and 2 USB ports. Power tools and devices from your vehicle.', price: '$28-38', rating: 4.4, pros: ['Two AC outlets for tool chargers', 'Built-in USB ports'], cons: ['Fan can be noisy', 'Drains car battery if engine off'], asin: 'B004MDXS0U' },
+        { name: 'Anker 40W Dual USB-C Car Charger', desc: 'Fast-charge phone and tablet simultaneously for field service apps and navigation.', price: '$16-22', rating: 4.7, pros: ['Dual fast charging', 'Extremely compact'], cons: ['No USB-A ports', 'Cable not included'], asin: 'B0CKXM1YY6' },
+        { name: 'Jackery Explorer 240 Portable Power Station', desc: 'Portable power station with 240Wh capacity. Charge laptops, tools, and phones off-grid.', price: '$200-250', rating: 4.6, pros: ['Massive portable power', 'Multiple output types'], cons: ['Heavy at 6.6 lbs', 'Expensive investment'], asin: 'B0B9XG2P16' },
+        { name: 'Anker PowerCore 26800mAh', desc: 'High-capacity power bank for multi-day field trips without access to outlets.', price: '$55-70', rating: 4.6, pros: ['Charges phone 6+ times', 'Dual USB output'], cons: ['Heavy and large', 'Slow to recharge itself'], asin: 'B01JIWQPMW' },
+        { name: 'Rugged Phone Case with Battery', desc: 'Protective phone case with integrated battery for all-day field use.', price: '$35-55', rating: 4.2, pros: ['Protection + power combined', 'Doubles battery life'], cons: ['Adds bulk and weight', 'Device-specific fit'], asin: 'B09JNQKQQ8' }
+      ],
+
+      'fieldservice-disorganized': [
+        { name: 'Dewalt TSTAK Tool Box', desc: 'Stackable modular tool storage system. Keeps field service equipment organized in your truck.', price: '$25-35', rating: 4.7, pros: ['Locks together when stacked', 'Extremely durable'], cons: ['Heavy empty', 'Expensive to build full set'], asin: 'B00HSHDHR6' },
+        { name: 'Custom LeatherCraft Tool Backpack', desc: 'Heavy-duty tool backpack with 75 pockets for carrying gear to job sites.', price: '$50-70', rating: 4.5, pros: ['75 pockets organize everything', 'Comfortable padded straps'], cons: ['Heavy when loaded', 'Too large for light jobs'], asin: 'B002YDSHSI' },
+        { name: 'Milwaukee PACKOUT Rolling Tool Box', desc: 'Industrial-grade rolling tool box with IP65 weather resistance.', price: '$80-110', rating: 4.8, pros: ['Weather-sealed IP65', 'Modular PACKOUT system'], cons: ['Premium price', 'Very heavy'], asin: 'B0759CM9C5' },
+        { name: 'Drive Auto Car Trunk Organizer', desc: 'Collapsible trunk storage for smaller tools, parts, and paperwork.', price: '$20-28', rating: 4.5, pros: ['Folds flat when empty', 'Affordable solution'], cons: ['Not heavy-duty', 'Limited capacity'], asin: 'B01LXAA2OQ' },
+        { name: 'Plano Sportsmans Trunk', desc: 'Large lockable trunk for secure equipment storage in truck beds.', price: '$35-55', rating: 4.4, pros: ['Lockable for security', 'Large capacity'], cons: ['No internal dividers', 'Basic latch mechanism'], asin: 'B000EUVJFE' }
+      ],
+
+      'fieldservice-backpain': [
+        { name: 'Everlasting Comfort Lumbar Support Pillow', desc: 'Memory foam lumbar support for long drives between field service calls.', price: '$25-35', rating: 4.4, pros: ['Real back pain relief', 'Breathable mesh cover'], cons: ['Takes time to break in', 'Can shift on some seats'], asin: 'B01IJNJEZ0' },
+        { name: 'ComfiLife Gel Enhanced Seat Cushion', desc: 'Gel memory foam seat cushion reduces tailbone pain from frequent vehicle entry/exit.', price: '$30-40', rating: 4.5, pros: ['Excellent pressure relief', 'Non-slip bottom'], cons: ['Adds seat height', 'Warm in summer'], asin: 'B014F8AMGC' },
+        { name: 'SNAILAX Vibration Massage Seat Cushion', desc: 'Heated massage cushion for recovery between service calls.', price: '$35-50', rating: 4.3, pros: ['Heat + massage combo', 'Plugs into car outlet'], cons: ['Wires to manage', 'May shift on seat'], asin: 'B076P5CDXG' },
+        { name: 'Carex Lumbar Support Cushion', desc: 'Firm support cushion with adjustable strap for work truck and van seats.', price: '$15-22', rating: 4.2, pros: ['Very affordable', 'Firm support level'], cons: ['Not memory foam', 'Basic design'], asin: 'B001EHUQXK' },
+        { name: 'TravelMate Gel-Infused Seat Cushion', desc: 'Cooling gel seat pad for hot weather field work driving.', price: '$30-40', rating: 4.3, pros: ['Stays cool in heat', 'Comfortable gel layer'], cons: ['Heavier than foam-only', 'Pricier for the size'], asin: 'B01LZRLS8N' }
+      ],
+
+      'fieldservice-workbetween': [
+        { name: 'JOYTUTUS Steering Wheel Desk Tray', desc: 'Portable work surface for completing job paperwork and logging service calls.', price: '$15-22', rating: 4.3, pros: ['Instant work surface', 'Fits all wheels'], cons: ['Parked only', 'Small surface area'], asin: 'B08HLPY256' },
+        { name: 'BESTEK 300W Power Inverter', desc: 'Run laptop and charge tool batteries from your vehicle between service calls.', price: '$28-38', rating: 4.4, pros: ['AC power on the go', 'USB ports included'], cons: ['Fan noise', 'Can drain battery'], asin: 'B004MDXS0U' },
+        { name: 'NETGEAR Nighthawk M1 Mobile Hotspot', desc: 'Portable WiFi for accessing service manuals and CRM between job sites.', price: '$100-150', rating: 4.1, pros: ['Reliable connection', 'All-day battery'], cons: ['Monthly data cost', 'Expensive device'], asin: 'B07G5KWZ3R' },
+        { name: 'Anker 7-in-1 USB-C Hub', desc: 'Connect peripherals to your laptop for report writing and data uploads in the field.', price: '$30-38', rating: 4.6, pros: ['All ports you need', 'Compact and travel-friendly'], cons: ['Gets warm', 'Short cable length'], asin: 'B07ZVKTP53' },
+        { name: 'Jackery Explorer 240 Portable Power Station', desc: 'Off-grid power for laptops, test equipment, and phones during extended field work.', price: '$200-250', rating: 4.6, pros: ['Hours of laptop power', 'Silent operation'], cons: ['Heavy investment', 'Needs recharging'], asin: 'B0B9XG2P16' }
+      ]
+    };
+
+    // Budget-specific value picks for Under $50
+    const BUDGET_PICKS = {
+      'under50': [
+        { name: 'LISEN Phone Mount for Car', desc: 'Universal air vent phone mount with strong grip. Works with all phone sizes.', price: '$10-15', rating: 4.5, pros: ['Ultra affordable', 'One-hand operation'], cons: ['Basic design', 'Can block vent airflow'], asin: 'B09MFHQFNY' },
+        { name: 'Anker USB-C Car Charger', desc: 'Compact 30W USB-C fast car charger. Small but powerful.', price: '$14-18', rating: 4.6, pros: ['Fast charging for cheap', 'Tiny form factor'], cons: ['Single port only', 'No cable included'], asin: 'B0BN7P28JW' },
+        { name: 'HOTOR Car Trash Can', desc: 'Waterproof leak-proof car garbage container. Keeps your gig car clean.', price: '$10-14', rating: 4.5, pros: ['Cheap and effective', 'Waterproof lining'], cons: ['Small capacity', 'Basic look'], asin: 'B07X5TGMVF' },
+        { name: 'Drop Stop Car Seat Gap Filler (2 Pack)', desc: 'Stop losing your phone, keys, and change between the seats.', price: '$20-25', rating: 4.4, pros: ['Solves a universal problem', 'Easy to install'], cons: ['Can shift over time', 'Not for wide gaps'], asin: 'B00BYH7GEM' },
+        { name: 'AmazonBasics Microfiber Cleaning Cloths (24 Pack)', desc: 'Keep your car interior spotless for passengers and professionalism.', price: '$12-16', rating: 4.7, pros: ['24-pack great value', 'Lint-free cleaning'], cons: ['Need washing regularly', 'Basic product'], asin: 'B009FUF6DM' }
+      ]
+    };
+
+    /* ========== QUIZ STEPS ========== */
+    const QUIZ_STEPS = [
+      {
+        question: "What's your gig?",
+        hint: "Select the type of work you do most",
+        options: [
+          { value: 'rideshare', label: 'Rideshare', icon: '\uD83D\uDE97' },
+          { value: 'fooddelivery', label: 'Food Delivery', icon: '\uD83C\uDF54' },
+          { value: 'mobilesales', label: 'Mobile Sales', icon: '\uD83D\uDCBC' },
+          { value: 'fieldservice', label: 'Field Service', icon: '\uD83D\uDD27' }
+        ]
+      },
+      {
+        question: "What's your vehicle?",
+        hint: "This helps us recommend the right fit",
+        options: [
+          { value: 'sedan', label: 'Sedan', icon: '\uD83D\uDE98' },
+          { value: 'suv', label: 'SUV', icon: '\uD83D\uDE99' },
+          { value: 'truck', label: 'Truck', icon: '\uD83D\uDE9A' },
+          { value: 'van', label: 'Van', icon: '\uD83D\uDE90' }
+        ]
+      },
+      {
+        question: "Biggest pain point?",
+        hint: "We'll focus your results on solving this",
+        options: [
+          { value: 'backpain', label: 'Back Pain', icon: '\uD83E\uDEB7' },
+          { value: 'phonedying', label: 'Phone Dying', icon: '\uD83D\uDD0B' },
+          { value: 'disorganized', label: 'Disorganized Car', icon: '\uD83D\uDCE6' },
+          { value: 'workbetween', label: 'Need to Work Between Gigs', icon: '\uD83D\uDCBB' },
+          { value: 'safety', label: 'Safety Concerns', icon: '\uD83D\uDEE1\uFE0F' }
+        ]
+      },
+      {
+        question: "What's your budget?",
+        hint: "Per product, not total",
+        options: [
+          { value: 'under50', label: 'Under $50', icon: '\uD83D\uDCB5' },
+          { value: '50to150', label: '$50 \u2013 $150', icon: '\uD83D\uDCB0' },
+          { value: '150plus', label: '$150+', icon: '\uD83D\uDC8E' }
+        ]
+      }
+    ];
+
+    /* ========== STATE ========== */
+    let quizAnswers = {};
+    let currentStep = 0;
+    let reviewPage = 1;
+    let selectedRating = 0;
+    let statsData = { today_visits: 0, all_time_visits: 0, avg_rating: 0, review_count: 0 };
+
+    /* ========== DOM REFS ========== */
+    const $ = (s, c) => (c || document).querySelector(s);
+    const $$ = (s, c) => (c || document).querySelectorAll(s);
+
+    /* ========== ROUTING ========== */
+    function route() {
+      const hash = window.location.hash.replace('#', '') || 'home';
+      const pages = ['home', 'review', 'about'];
+      pages.forEach(p => {
+        const el = $(`#page-${p}`);
+        if (el) {
+          if (p === hash) {
+            el.classList.remove('hidden');
+            el.classList.add('page-enter');
+          } else {
+            el.classList.add('hidden');
+            el.classList.remove('page-enter');
+          }
+        }
+      });
+
+      // Update nav active state
+      $$('.nav-links a[data-nav]').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('data-nav') === hash);
+      });
+
+      // Close mobile menu
+      const menu = $('.nav-links');
+      const burger = $('.hamburger');
+      if (menu) menu.classList.remove('open');
+      if (burger) { burger.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); }
+
+      // Load page-specific data
+      if (hash === 'review') {
+        loadReviews(1);
+        loadAggregateRating();
+      }
+
+      // Scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    /* ========== NAV ========== */
+    function initNav() {
+      const burger = $('.hamburger');
+      const menu = $('.nav-links');
+
+      burger.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('open');
+        burger.classList.toggle('open');
+        burger.setAttribute('aria-expanded', isOpen.toString());
+      });
+
+      // Close menu when clicking a nav link
+      $$('.nav-links a[data-nav]').forEach(a => {
+        a.addEventListener('click', () => {
+          menu.classList.remove('open');
+          burger.classList.remove('open');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      // Scroll shadow on nav
+      let ticking = false;
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            $('nav').classList.toggle('scrolled', window.scrollY > 10);
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    }
+
+    /* ========== QUIZ ========== */
+    function initQuiz() {
+      $('#start-quiz-btn').addEventListener('click', () => {
+        quizAnswers = {};
+        currentStep = 0;
+        $('#quiz-section').classList.remove('hidden');
+        $('#results-section').classList.add('hidden');
+        renderQuizStep();
+        $('#quiz-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+
+      $('#retake-btn').addEventListener('click', () => {
+        quizAnswers = {};
+        currentStep = 0;
+        $('#results-section').classList.add('hidden');
+        $('#quiz-section').classList.remove('hidden');
+        renderQuizStep();
+        $('#quiz-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    function renderQuizStep() {
+      const step = QUIZ_STEPS[currentStep];
+      const container = $('#quiz-container');
+
+      // Build progress bar
+      let progressHTML = '<div class="quiz-progress">';
+      progressHTML += `<span class="quiz-step-label">Step ${currentStep + 1}/${QUIZ_STEPS.length}</span>`;
+      for (let i = 0; i < QUIZ_STEPS.length; i++) {
+        let cls = 'quiz-progress-step';
+        if (i < currentStep) cls += ' completed';
+        if (i === currentStep) cls += ' active';
+        progressHTML += `<div class="${cls}"></div>`;
+      }
+      progressHTML += '</div>';
+
+      // Build options
+      let optionsHTML = '<div class="quiz-options">';
+      step.options.forEach(opt => {
+        optionsHTML += `<button class="quiz-option" data-value="${opt.value}">
+          <span class="opt-icon" aria-hidden="true">${opt.icon}</span>
+          <span>${opt.label}</span>
+        </button>`;
+      });
+      optionsHTML += '</div>';
+
+      container.innerHTML = `
+        ${progressHTML}
+        <div class="quiz-card">
+          <h2>${step.question}</h2>
+          <p class="step-hint">${step.hint}</p>
+          ${optionsHTML}
+        </div>
+      `;
+
+      // Bind option clicks
+      $$('.quiz-option', container).forEach(btn => {
+        btn.addEventListener('click', () => {
+          const keys = ['gig', 'vehicle', 'painPoint', 'budget'];
+          quizAnswers[keys[currentStep]] = btn.getAttribute('data-value');
+          currentStep++;
+          if (currentStep < QUIZ_STEPS.length) {
+            renderQuizStep();
+          } else {
+            showResults();
+          }
+        });
+      });
+    }
+
+    function showResults() {
+      $('#quiz-section').classList.add('hidden');
+      $('#results-section').classList.remove('hidden');
+
+      const { gig, vehicle, painPoint, budget } = quizAnswers;
+      const fullKey = `${gig}-${vehicle}-${painPoint}-${budget}`;
+      const fallbackKey = `${gig}-${painPoint}`;
+
+      // Lookup products
+      let products = PRODUCTS[fullKey] || PRODUCTS[fallbackKey] || [];
+
+      // Filter by budget
+      if (budget === 'under50') {
+        products = products.filter(p => {
+          const match = p.price.match(/\$(\d+)/);
+          return match && parseInt(match[1]) < 60;
+        });
+        // Add budget picks if we have fewer than 5
+        if (products.length < 5) {
+          const budgetPicks = BUDGET_PICKS['under50'] || [];
+          const existing = new Set(products.map(p => p.asin));
+          budgetPicks.forEach(bp => {
+            if (!existing.has(bp.asin) && products.length < 8) {
+              products.push(bp);
+            }
+          });
+        }
+      } else if (budget === '150plus') {
+        // For high budget, include all products - they may want premium options
+        // No filtering needed, show all matches
+      }
+
+      // Ensure 5-8 products
+      if (products.length > 8) products = products.slice(0, 8);
+      if (products.length < 5) {
+        // Fill with budget picks as fallback
+        const budgetPicks = BUDGET_PICKS['under50'] || [];
+        const existing = new Set(products.map(p => p.asin));
+        budgetPicks.forEach(bp => {
+          if (!existing.has(bp.asin) && products.length < 5) {
+            products.push(bp);
+          }
+        });
+      }
+
+      // Update summary
+      const gigLabels = { rideshare: 'Rideshare', fooddelivery: 'Food Delivery', mobilesales: 'Mobile Sales', fieldservice: 'Field Service' };
+      const painLabels = { backpain: 'back pain', phonedying: 'phone dying', disorganized: 'car organization', workbetween: 'working between gigs', safety: 'safety' };
+      $('#results-summary').textContent = `Top picks for ${gigLabels[gig] || gig} drivers focused on ${painLabels[painPoint] || painPoint}.`;
+
+      // Render tiles
+      const grid = $('#results-grid');
+      grid.innerHTML = '';
+
+      products.forEach((p, i) => {
+        const tile = document.createElement('div');
+        tile.className = 'product-tile';
+        tile.style.animationDelay = `${i * 0.08}s`;
+
+        const starsHTML = renderStars(p.rating);
+        const affiliateURL = `https://www.amazon.com/dp/${p.asin}?tag=${AFFILIATE_TAG}`;
+
+        tile.innerHTML = `
+          <div class="product-tile-header">
+            <span class="product-name">${escHTML(p.name)}</span>
+            <span class="price-badge">${escHTML(p.price)}</span>
+          </div>
+          <div class="product-desc">${escHTML(p.desc)}</div>
+          <div class="product-stars">${starsHTML} <span class="rating-text">${p.rating}</span></div>
+          <div class="pros-cons">
+            <div><span class="pro-icon">+</span> ${escHTML(p.pros[0])}</div>
+            <div><span class="con-icon">&minus;</span> ${escHTML(p.cons[0])}</div>
+            <div><span class="pro-icon">+</span> ${escHTML(p.pros[1])}</div>
+            <div><span class="con-icon">&minus;</span> ${escHTML(p.cons[1])}</div>
+          </div>
+          <a href="${affiliateURL}" target="_blank" rel="noopener noreferrer" class="amazon-btn">View on Amazon &rarr;</a>
+        `;
+        grid.appendChild(tile);
+      });
+
+      $('#results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /* ========== STARS HELPER ========== */
+    function renderStars(rating) {
+      let html = '';
+      for (let i = 1; i <= 5; i++) {
+        if (i <= Math.floor(rating)) {
+          html += '<span class="filled">&#9733;</span>';
+        } else if (i - rating < 1 && i - rating > 0) {
+          html += '<span class="filled">&#9733;</span>';
+        } else {
+          html += '<span class="empty">&#9734;</span>';
+        }
+      }
+      return html;
+    }
+
+    function renderStarsText(rating) {
+      let text = '';
+      for (let i = 1; i <= 5; i++) {
+        text += i <= Math.round(rating) ? '\u2605' : '\u2606';
+      }
+      return text;
+    }
+
+    /* ========== HTML ESCAPE ========== */
+    function escHTML(str) {
+      const el = document.createElement('span');
+      el.textContent = str;
+      return el.innerHTML;
+    }
+
+    /* ========== API CALLS ========== */
+    async function logVisit() {
+      try {
+        await fetch(`${API}/api/visit`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ page: window.location.hash || '#home' })
+        });
+      } catch (e) { /* silently fail */ }
+    }
+
+    async function fetchStats() {
+      try {
+        const res = await fetch(`${API}/api/stats`);
+        if (!res.ok) return;
+        statsData = await res.json();
+        updateStatsUI();
+        updateJSONLD();
+      } catch (e) { /* silently fail */ }
+    }
+
+    function updateStatsUI() {
+      const fmt = n => n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k+' : (n || 0).toString();
+
+      // Footer stats
+      $('#stat-today').textContent = fmt(statsData.today_visits);
+      $('#stat-alltime').textContent = fmt(statsData.all_time_visits);
+      $('#stat-avg').textContent = statsData.avg_rating ? Number(statsData.avg_rating).toFixed(1) : '--';
+      $('#stat-reviews').textContent = statsData.review_count || '0';
+
+      // Trust signals
+      const visitors = statsData.all_time_visits || 0;
+      $('#trust-visitors').textContent = visitors >= 1000 ? fmt(visitors) : (visitors > 0 ? visitors.toLocaleString() + '+' : '1,000+');
+      $('#trust-rating').textContent = statsData.avg_rating ? Number(statsData.avg_rating).toFixed(1) : '4.5';
+    }
+
+    function updateJSONLD() {
+      const el = $('#jsonld-schema');
+      if (!el) return;
+      try {
+        const data = JSON.parse(el.textContent);
+        if (data.aggregateRating) {
+          data.aggregateRating.ratingValue = statsData.avg_rating ? Number(statsData.avg_rating).toFixed(1) : '4.5';
+          data.aggregateRating.reviewCount = String(statsData.review_count || 0);
+        }
+        el.textContent = JSON.stringify(data, null, 2);
+      } catch (e) { /* silently fail */ }
+    }
+
+    /* ========== REVIEWS ========== */
+    function initReviewForm() {
+      // Star input
+      const starBtns = $$('#star-input button');
+      starBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          selectedRating = parseInt(btn.getAttribute('data-star'));
+          starBtns.forEach(b => {
+            b.classList.toggle('active', parseInt(b.getAttribute('data-star')) <= selectedRating);
+          });
+        });
+        btn.addEventListener('mouseenter', () => {
+          const hoverVal = parseInt(btn.getAttribute('data-star'));
+          starBtns.forEach(b => {
+            b.classList.toggle('active', parseInt(b.getAttribute('data-star')) <= hoverVal);
+          });
+        });
+      });
+
+      $('#star-input').addEventListener('mouseleave', () => {
+        starBtns.forEach(b => {
+          b.classList.toggle('active', parseInt(b.getAttribute('data-star')) <= selectedRating);
+        });
+      });
+
+      // Character counter
+      const textarea = $('#review-comment');
+      const counter = $('#char-count');
+      textarea.addEventListener('input', () => {
+        counter.textContent = textarea.value.length;
+      });
+
+      // Submit form
+      $('#review-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        if (selectedRating === 0) {
+          alert('Please select a star rating.');
+          return;
+        }
+
+        const comment = textarea.value.trim();
+        if (!comment) {
+          alert('Please write a comment.');
+          return;
+        }
+
+        const submitBtn = $('#submit-review-btn');
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner"></span> Submitting...';
+
+        try {
+          const res = await fetch(`${API}/api/review`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              name: $('#review-name').value.trim() || 'Anonymous',
+              rating: selectedRating,
+              comment: comment
+            })
+          });
+
+          if (res.ok) {
+            $('#review-form-card').innerHTML = `
+              <div class="thank-you-msg">
+                <p style="font-size:1.5rem;margin-bottom:8px;">&#10003;</p>
+                <p>Thank you for your review!</p>
+                <p style="font-size:0.85rem;color:#64748B;margin-top:8px;">Your feedback helps other gig workers find the right gear.</p>
+              </div>
+            `;
+            selectedRating = 0;
+            loadReviews(1);
+            loadAggregateRating();
+            fetchStats();
+          } else {
+            throw new Error('Submission failed');
+          }
+        } catch (err) {
+          alert('Failed to submit review. Please try again.');
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = 'Submit Review';
+        }
+      });
+    }
+
+    async function loadAggregateRating() {
+      try {
+        const res = await fetch(`${API}/api/stats`);
+        if (!res.ok) return;
+        const data = await res.json();
+        const avg = data.avg_rating ? Number(data.avg_rating).toFixed(1) : '--';
+        const count = data.review_count || 0;
+
+        $('#agg-rating').textContent = avg;
+        $('#agg-stars').innerHTML = avg !== '--' ? renderStarsText(parseFloat(avg)) : '';
+        $('#agg-count').textContent = count > 0 ? `Based on ${count} review${count !== 1 ? 's' : ''}` : 'No reviews yet';
+      } catch (e) { /* silently fail */ }
+    }
+
+    async function loadReviews(page) {
+      reviewPage = page;
+      const container = $('#reviews-container');
+      container.innerHTML = '<div style="text-align:center;padding:20px;"><span class="spinner"></span></div>';
+
+      try {
+        const res = await fetch(`${API}/api/reviews?page=${page}&limit=10`);
+        if (!res.ok) throw new Error('Failed to load');
+        const data = await res.json();
+
+        const reviews = data.reviews || data.data || data || [];
+        const total = data.total || reviews.length;
+        const totalPages = Math.max(1, Math.ceil(total / 10));
+
+        if (reviews.length === 0) {
+          container.innerHTML = '<div class="no-reviews-msg">No reviews yet. Be the first to share your experience!</div>';
+          $('#pagination').innerHTML = '';
+          return;
+        }
+
+        container.innerHTML = '';
+        reviews.forEach(r => {
+          const card = document.createElement('div');
+          card.className = 'review-card';
+          const date = r.created_at ? new Date(r.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : '';
+          card.innerHTML = `
+            <div class="review-card-header">
+              <span class="review-card-name">${escHTML(r.name || 'Anonymous')}</span>
+              <span class="review-card-date">${date}</span>
+            </div>
+            <div class="review-card-stars">${renderStarsText(r.rating)}</div>
+            <div class="review-card-comment">${escHTML(r.comment || '')}</div>
+          `;
+          container.appendChild(card);
+        });
+
+        // Pagination
+        const pag = $('#pagination');
+        if (totalPages > 1) {
+          pag.innerHTML = `
+            <button id="prev-page" ${page <= 1 ? 'disabled' : ''}>&#8592; Previous</button>
+            <span class="page-info">Page ${page} of ${totalPages}</span>
+            <button id="next-page" ${page >= totalPages ? 'disabled' : ''}>Next &#8594;</button>
+          `;
+          if (page > 1) {
+            $('#prev-page').addEventListener('click', () => loadReviews(page - 1));
+          }
+          if (page < totalPages) {
+            $('#next-page').addEventListener('click', () => loadReviews(page + 1));
+          }
+        } else {
+          pag.innerHTML = '';
+        }
+      } catch (e) {
+        container.innerHTML = '<div class="no-reviews-msg">Unable to load reviews. Please try again later.</div>';
+      }
+    }
+
+    /* ========== INIT ========== */
+    function init() {
+      initNav();
+      initQuiz();
+      initReviewForm();
+
+      // Initial route
+      if (!window.location.hash) window.location.hash = '#home';
+      route();
+
+      // Listen for hash changes
+      window.addEventListener('hashchange', route);
+
+      // Log visit and fetch stats
+      logVisit();
+      fetchStats();
+
+      // Refresh stats every 60 seconds
+      setInterval(fetchStats, 60000);
+    }
+
+    // Start when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+  </script>
+
+</body>
+</html>
