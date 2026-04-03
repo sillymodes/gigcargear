@@ -1449,7 +1449,7 @@
         tile.style.animationDelay = `${i * 0.08}s`;
 
         const starsHTML = renderStars(p.rating);
-        const affiliateURL = `https://www.amazon.com/dp/${p.asin}?tag=${AFFILIATE_TAG}`;
+        const affiliateURL = `https://www.amazon.com/s?k=${encodeURIComponent(p.name).replace(/%20/g, '+')}&tag=${AFFILIATE_TAG}`;
 
         tile.innerHTML = `
           <div class="product-tile-header">
